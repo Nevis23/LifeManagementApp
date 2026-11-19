@@ -100,6 +100,14 @@
                                         TextColor="Gray" />
 
                                     <Button
+                                        Text="Edit"
+                                        BackgroundColor="#2563EB"
+                                        TextColor="White"
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}},
+                                                          Path=BindingContext.EditTodoCommand}"
+                                        CommandParameter="{Binding .}" />
+
+                                    <Button
                                         Text="Delete"
                                         BackgroundColor="#DC2626"
                                         TextColor="White"
@@ -116,6 +124,49 @@
                 </CollectionView.ItemTemplate>
 
             </CollectionView>
+
+            <VerticalStackLayout
+                IsVisible="{Binding IsEditing}"
+                Spacing="10"
+                Padding="10"
+                BackgroundColor="#E5E7EB">
+
+                <Label
+                    Text="Edit task"
+                    FontSize="22"
+                    FontAttributes="Bold"
+                    TextColor="Black" />
+
+                <Entry
+                    Placeholder="Task title"
+                    Text="{Binding EditTodoTitle}" />
+
+                <Label Text="Priority" TextColor="Black" />
+
+                <Picker
+                    Title="Select priority"
+                    ItemsSource="{Binding PriorityOptions}"
+                    SelectedItem="{Binding EditTodoPriorityText}" />
+
+                <Label Text="Due date" TextColor="Black" />
+
+                <DatePicker
+                    Date="{Binding EditTodoDueDate}"
+                    Format="dd.MM.yyyy" />
+
+                <Button
+                    Text="Save changes"
+                    Command="{Binding SaveTodoChangesCommand}"
+                    BackgroundColor="#16A34A"
+                    TextColor="White" />
+
+                <Button
+                    Text="Cancel"
+                    Command="{Binding CancelEditCommand}"
+                    BackgroundColor="#6B7280"
+                    TextColor="White" />
+
+            </VerticalStackLayout>
 
             <Label
                 Text="Add new task"
