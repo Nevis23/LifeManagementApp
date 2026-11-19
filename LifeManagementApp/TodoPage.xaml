@@ -80,6 +80,17 @@
 
                                     <Label
                                         Text="{Binding Priority, StringFormat='Priority: {0}'}"
+                                        TextColor="{Binding PriorityColor}"
+                                        FontAttributes="Bold"
+                                        FontSize="13" />
+
+                                    <Label
+                                        Text="{Binding DueDate, StringFormat='Due date: {0:dd.MM.yyyy}'}"
+                                        TextColor="{Binding DueDateColor}"
+                                        FontSize="13" />
+
+                                    <Label
+                                        Text="{Binding Priority, StringFormat='Priority: {0}'}"
                                         FontSize="13"
                                         TextColor="Gray" />
 

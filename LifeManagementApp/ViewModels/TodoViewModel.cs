@@ -3,7 +3,6 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using LifeManagementApp.Models;
 using LifeManagementApp.Services;
-using Microsoft.EntityFrameworkCore.Internal;
 using System.Collections.ObjectModel;
 
 namespace LifeManagementApp.ViewModels
@@ -120,5 +119,20 @@ namespace LifeManagementApp.ViewModels
         "Medium",
         "Low"
             };
+
+        [ObservableProperty]
+        private Todo selectedTodo;
+
+        [ObservableProperty]
+        private string editTodoTitle = string.Empty;
+
+        [ObservableProperty]
+        private int editTodoPriority = 2;
+
+        [ObservableProperty]
+        private DateTime editTodoDueDate = DateTime.Today;
+
+        [ObservableProperty]
+        private string editTodoPriorityText = "Medium";
     }
 }
