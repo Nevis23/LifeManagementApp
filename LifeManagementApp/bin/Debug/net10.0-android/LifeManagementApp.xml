@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LifeManagementApp</name>
+    </assembly>
+    <members>
+        <member name="T:LifeManagementApp.ViewModels.TodoViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:LifeManagementApp.ViewModels.TodoViewModel.NewTodoTitle">
+            <inheritdoc cref="F:LifeManagementApp.ViewModels.TodoViewModel.newTodoTitle"/>
+        </member>
+        <member name="P:LifeManagementApp.ViewModels.TodoViewModel.NewTodoDueDate">
+            <inheritdoc cref="F:LifeManagementApp.ViewModels.TodoViewModel.newTodoDueDate"/>
+        </member>
+        <member name="P:LifeManagementApp.ViewModels.TodoViewModel.SelectedPriority">
+            <inheritdoc cref="F:LifeManagementApp.ViewModels.TodoViewModel.selectedPriority"/>
+        </member>
+        <member name="F:LifeManagementApp.ViewModels.TodoViewModel.addTodoCommand">
+            <summary>The backing field for <see cref="P:LifeManagementApp.ViewModels.TodoViewModel.AddTodoCommand"/>.</summary>
+        </member>
+        <member name="P:LifeManagementApp.ViewModels.TodoViewModel.AddTodoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LifeManagementApp.ViewModels.TodoViewModel.AddTodoAsync"/>.</summary>
+        </member>
+        <member name="F:LifeManagementApp.ViewModels.TodoViewModel.deleteTodoCommand">
+            <summary>The backing field for <see cref="P:LifeManagementApp.ViewModels.TodoViewModel.DeleteTodoCommand"/>.</summary>
+        </member>
+        <member name="P:LifeManagementApp.ViewModels.TodoViewModel.DeleteTodoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:LifeManagementApp.ViewModels.TodoViewModel.DeleteTodoAsync(LifeManagementApp.Models.Todo)"/>.</summary>
+        </member>
+        <member name="F:LifeManagementApp.ViewModels.TodoViewModel.toggleTodoCompletedCommand">
+            <summary>The backing field for <see cref="P:LifeManagementApp.ViewModels.TodoViewModel.ToggleTodoCompletedCommand"/>.</summary>
+        </member>
+        <member name="P:LifeManagementApp.ViewModels.TodoViewModel.ToggleTodoCompletedCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:LifeManagementApp.ViewModels.TodoViewModel.ToggleTodoCompletedAsync(LifeManagementApp.Models.Todo)"/>.</summary>
+        </member>
+        <member name="F:LifeManagementApp.ViewModels.TodoViewModel.sortByPriorityCommand">
+            <summary>The backing field for <see cref="P:LifeManagementApp.ViewModels.TodoViewModel.SortByPriorityCommand"/>.</summary>
+        </member>
+        <member name="P:LifeManagementApp.ViewModels.TodoViewModel.SortByPriorityCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LifeManagementApp.ViewModels.TodoViewModel.SortByPriorityAsync"/>.</summary>
+        </member>
+        <member name="F:LifeManagementApp.ViewModels.TodoViewModel.sortByDueDateCommand">
+            <summary>The backing field for <see cref="P:LifeManagementApp.ViewModels.TodoViewModel.SortByDueDateCommand"/>.</summary>
+        </member>
+        <member name="P:LifeManagementApp.ViewModels.TodoViewModel.SortByDueDateCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LifeManagementApp.ViewModels.TodoViewModel.SortByDueDateAsync"/>.</summary>
+        </member>
+        <member name="T:LifeManagementApp.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.NewTodoTitle">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "NewTodoTitle" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.NewTodoDueDate">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "NewTodoDueDate" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedPriority">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedPriority" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.NewTodoTitle">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "NewTodoTitle" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.NewTodoDueDate">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "NewTodoDueDate" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedPriority">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedPriority" generated properties.</summary>
+        </member>
+    </members>
+</doc>
