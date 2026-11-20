@@ -664,3 +664,4 @@ C:\Users\Joni\Desktop\projekti\LifeManagementApp\LifeManagementApp\obj\Debug\net
 C:\Users\Joni\Desktop\projekti\LifeManagementApp\LifeManagementApp\obj\Debug\net10.0-ios\iossimulator-x64\LifeManagementApp.pdb
 C:\Users\Joni\Desktop\projekti\LifeManagementApp\LifeManagementApp\obj\Debug\net10.0-ios\iossimulator-x64\LifeManagementApp.genruntimeconfig.cache
 C:\Users\Joni\Desktop\projekti\LifeManagementApp\LifeManagementApp\obj\Debug\net10.0-ios\iossimulator-x64\ref\LifeManagementApp.dll
+C:\Users\Joni\Desktop\projekti\LifeManagementApp\LifeManagementApp\obj\Debug\net10.0-ios\iossimulator-x64\build-signature\signature

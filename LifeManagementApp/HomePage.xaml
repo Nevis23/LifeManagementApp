@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="LifeManagementApp.HomePage"
+    Title="Home">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="20"
+            Spacing="20">
+
+            <Label
+                Text="Dashboard"
+                FontSize="30"
+                FontAttributes="Bold" />
+
+            <Label
+                Text="Welcome to Life Management App!"
+                FontSize="16"
+                TextColor="Gray" />
+
+            <Button
+                Text="Open my tasks"
+                Clicked="OnOpenTodosClicked"
+                BackgroundColor="#2563EB"
+                TextColor="White" />
+
+            <!-- tehtävät -->
+            <Frame
+                Padding="15"
+                CornerRadius="10"
+                BackgroundColor="#F0F0F0">
+
+                <VerticalStackLayout Spacing="10">
+                    <Label
+                        Text="Important tasks"
+                        FontSize="22"
+                        FontAttributes="Bold"
+                        TextColor="Black" />
+
+                    <CollectionView
+                        ItemsSource="{Binding ImportantTodos}"
+                        SelectionMode="None">
+
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <VerticalStackLayout
+                                    Padding="5"
+                                    Spacing="3">
+
+                                    <Label
+                                        Text="{Binding Title}"
+                                        FontSize="16"
+                                        FontAttributes="Bold"
+                                        TextColor="Black" />
+
+                                    <Label
+                                        Text="{Binding Priority}"
+                                        TextColor="{Binding PriorityColor}" />
+
+                                    <Label
+                                        Text="{Binding DueDate,
+                                            StringFormat='Due: {0:dd.MM.yyyy}'}"
+                                        TextColor="{Binding DueDateColor}" />
+
+                                </VerticalStackLayout>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- sää -->
+            <Frame
+                Padding="15"
+                CornerRadius="10"
+                BackgroundColor="#F0F0F0">
+
+                <VerticalStackLayout Spacing="10">
+                    <Label
+                        Text="Weather"
+                        FontSize="22"
+                        FontAttributes="Bold"
+                        TextColor="Black" />
+
+                    <Label
+                        Text="{Binding Temperature}"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        TextColor="Black" />
+
+                    <Label
+                        Text="{Binding WindSpeed}"
+                        FontSize="16"
+                        TextColor="Black" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Kitesurfing -->
+            <Frame
+                Padding="15"
+                CornerRadius="10"
+                BackgroundColor="#E0F2FE">
+
+                <VerticalStackLayout Spacing="10">
+                    <Label
+                        Text="Kitesurfing conditions"
+                        FontSize="22"
+                        FontAttributes="Bold"
+                        TextColor="Black" />
+
+                    <Label
+                        Text="Good wind conditions for kitesurfing!"
+                        TextColor="Green"
+                        FontAttributes="Bold"
+                        IsVisible="{Binding IsKitesurfingWeather}" />
+
+                    <Label
+                        Text="Wind conditions will appear here."
+                        TextColor="Gray" />
+                </VerticalStackLayout>
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

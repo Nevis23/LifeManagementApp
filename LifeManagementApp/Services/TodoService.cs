@@ -84,5 +84,18 @@ namespace LifeManagementApp.Services
                     .ThenBy(todo => todo.Priority)
                     .ToListAsync();
             }
+
+        public async Task<List<Todo>> GetTopThreeTodosAsync()
+        {
+            await using var context =
+                await _contextFactory.CreateDbContextAsync();
+
+            return await context.Todos
+                .Where(todo => !todo.IsCompleted)
+                .OrderBy(todo => todo.Priority)
+                .ThenBy(todo => todo.DueDate)
+                .Take(3)
+                .ToListAsync();
+        }
     }
 }

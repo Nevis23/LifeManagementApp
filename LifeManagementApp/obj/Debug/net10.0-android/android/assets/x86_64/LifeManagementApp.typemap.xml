@@ -1,10 +1,10 @@
-<api type="debug" assembly-name="LifeManagementApp" mvid="3a7bee9243614c678c7e3688271e1719">
+<api type="debug" assembly-name="LifeManagementApp" mvid="15214f0649ba4a64bf1d88ba7b7c2e45">
   <java-to-managed>
-    <entry java-name="crc6457e3f3689f192082/MainActivity" managed-name="LifeManagementApp.MainActivity, LifeManagementApp" managed-type-token-id="33554443" />
-    <entry java-name="crc6457e3f3689f192082/MainApplication" managed-name="LifeManagementApp.MainApplication, LifeManagementApp" managed-type-token-id="33554444" />
+    <entry java-name="crc6457e3f3689f192082/MainActivity" managed-name="LifeManagementApp.MainActivity, LifeManagementApp" managed-type-token-id="33554444" />
+    <entry java-name="crc6457e3f3689f192082/MainApplication" managed-name="LifeManagementApp.MainApplication, LifeManagementApp" managed-type-token-id="33554445" />
   </java-to-managed>
   <managed-to-java>
-    <entry java-name="crc6457e3f3689f192082/MainActivity" managed-name="LifeManagementApp.MainActivity, LifeManagementApp" managed-type-token-id="33554443" />
-    <entry java-name="crc6457e3f3689f192082/MainApplication" managed-name="LifeManagementApp.MainApplication, LifeManagementApp" managed-type-token-id="33554444" />
+    <entry java-name="crc6457e3f3689f192082/MainActivity" managed-name="LifeManagementApp.MainActivity, LifeManagementApp" managed-type-token-id="33554444" />
+    <entry java-name="crc6457e3f3689f192082/MainApplication" managed-name="LifeManagementApp.MainApplication, LifeManagementApp" managed-type-token-id="33554445" />
   </managed-to-java>
 </api>

@@ -34,11 +34,18 @@ namespace LifeManagementApp
                 options.UseSqlite($"Data Source={databasePath}")
             );
 
+            /* singleton sovellus käyttää samaa oliota koko sovelluksen ajan */
             builder.Services.AddSingleton<TodoService>();
 
             builder.Services.AddTransient<TodoViewModel>();
 
+            builder.Services.AddTransient<HomeViewModel>();
+
             builder.Services.AddTransient<TodoPage>();
+
+            builder.Services.AddTransient<HomePage>();
+
+            builder.Services.AddSingleton<WeatherService>();
 
             return builder.Build();
         }

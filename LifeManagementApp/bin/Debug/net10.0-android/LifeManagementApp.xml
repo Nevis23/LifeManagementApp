@@ -4,7 +4,22 @@
         <name>LifeManagementApp</name>
     </assembly>
     <members>
+        <member name="T:LifeManagementApp.ViewModels.HomeViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:LifeManagementApp.ViewModels.HomeViewModel.Temperature">
+            <inheritdoc cref="F:LifeManagementApp.ViewModels.HomeViewModel.temperature"/>
+        </member>
+        <member name="P:LifeManagementApp.ViewModels.HomeViewModel.WindSpeed">
+            <inheritdoc cref="F:LifeManagementApp.ViewModels.HomeViewModel.windSpeed"/>
+        </member>
+        <member name="P:LifeManagementApp.ViewModels.HomeViewModel.IsKitesurfingWeather">
+            <inheritdoc cref="F:LifeManagementApp.ViewModels.HomeViewModel.isKitesurfingWeather"/>
+        </member>
         <member name="T:LifeManagementApp.ViewModels.TodoViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
@@ -20,6 +35,21 @@
         </member>
         <member name="P:LifeManagementApp.ViewModels.TodoViewModel.SelectedPriority">
             <inheritdoc cref="F:LifeManagementApp.ViewModels.TodoViewModel.selectedPriority"/>
+        </member>
+        <member name="P:LifeManagementApp.ViewModels.TodoViewModel.SelectedTodo">
+            <inheritdoc cref="F:LifeManagementApp.ViewModels.TodoViewModel.selectedTodo"/>
+        </member>
+        <member name="P:LifeManagementApp.ViewModels.TodoViewModel.EditTodoTitle">
+            <inheritdoc cref="F:LifeManagementApp.ViewModels.TodoViewModel.editTodoTitle"/>
+        </member>
+        <member name="P:LifeManagementApp.ViewModels.TodoViewModel.EditTodoDueDate">
+            <inheritdoc cref="F:LifeManagementApp.ViewModels.TodoViewModel.editTodoDueDate"/>
+        </member>
+        <member name="P:LifeManagementApp.ViewModels.TodoViewModel.EditTodoPriorityText">
+            <inheritdoc cref="F:LifeManagementApp.ViewModels.TodoViewModel.editTodoPriorityText"/>
+        </member>
+        <member name="P:LifeManagementApp.ViewModels.TodoViewModel.IsEditing">
+            <inheritdoc cref="F:LifeManagementApp.ViewModels.TodoViewModel.isEditing"/>
         </member>
         <member name="F:LifeManagementApp.ViewModels.TodoViewModel.addTodoCommand">
             <summary>The backing field for <see cref="P:LifeManagementApp.ViewModels.TodoViewModel.AddTodoCommand"/>.</summary>
@@ -51,6 +81,24 @@
         <member name="P:LifeManagementApp.ViewModels.TodoViewModel.SortByDueDateCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LifeManagementApp.ViewModels.TodoViewModel.SortByDueDateAsync"/>.</summary>
         </member>
+        <member name="F:LifeManagementApp.ViewModels.TodoViewModel.editTodoCommand">
+            <summary>The backing field for <see cref="P:LifeManagementApp.ViewModels.TodoViewModel.EditTodoCommand"/>.</summary>
+        </member>
+        <member name="P:LifeManagementApp.ViewModels.TodoViewModel.EditTodoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:LifeManagementApp.ViewModels.TodoViewModel.EditTodo(LifeManagementApp.Models.Todo)"/>.</summary>
+        </member>
+        <member name="F:LifeManagementApp.ViewModels.TodoViewModel.saveTodoChangesCommand">
+            <summary>The backing field for <see cref="P:LifeManagementApp.ViewModels.TodoViewModel.SaveTodoChangesCommand"/>.</summary>
+        </member>
+        <member name="P:LifeManagementApp.ViewModels.TodoViewModel.SaveTodoChangesCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LifeManagementApp.ViewModels.TodoViewModel.SaveTodoChangesAsync"/>.</summary>
+        </member>
+        <member name="F:LifeManagementApp.ViewModels.TodoViewModel.cancelEditCommand">
+            <summary>The backing field for <see cref="P:LifeManagementApp.ViewModels.TodoViewModel.CancelEditCommand"/>.</summary>
+        </member>
+        <member name="P:LifeManagementApp.ViewModels.TodoViewModel.CancelEditCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:LifeManagementApp.ViewModels.TodoViewModel.CancelEdit"/>.</summary>
+        </member>
         <member name="T:LifeManagementApp.Resource">
             <summary>
             Android Resource Designer class.
@@ -63,6 +111,15 @@
             for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
             </summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Temperature">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Temperature" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.WindSpeed">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "WindSpeed" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsKitesurfingWeather">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsKitesurfingWeather" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.NewTodoTitle">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "NewTodoTitle" generated properties.</summary>
         </member>
@@ -72,11 +129,35 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedPriority">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedPriority" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedTodo">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedTodo" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.EditTodoTitle">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "EditTodoTitle" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.EditTodoDueDate">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "EditTodoDueDate" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.EditTodoPriorityText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "EditTodoPriorityText" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsEditing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsEditing" generated properties.</summary>
+        </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
             <summary>
             A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
             for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
             </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Temperature">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Temperature" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.WindSpeed">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "WindSpeed" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsKitesurfingWeather">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsKitesurfingWeather" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.NewTodoTitle">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "NewTodoTitle" generated properties.</summary>
@@ -86,6 +167,21 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedPriority">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedPriority" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedTodo">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedTodo" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.EditTodoTitle">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "EditTodoTitle" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.EditTodoDueDate">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "EditTodoDueDate" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.EditTodoPriorityText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "EditTodoPriorityText" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsEditing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsEditing" generated properties.</summary>
         </member>
     </members>
 </doc>

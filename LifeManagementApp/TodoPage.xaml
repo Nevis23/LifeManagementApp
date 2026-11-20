@@ -88,17 +88,7 @@
                                         Text="{Binding DueDate, StringFormat='Due date: {0:dd.MM.yyyy}'}"
                                         TextColor="{Binding DueDateColor}"
                                         FontSize="13" />
-
-                                    <Label
-                                        Text="{Binding Priority, StringFormat='Priority: {0}'}"
-                                        FontSize="13"
-                                        TextColor="Gray" />
-
-                                    <Label
-                                        Text="{Binding DueDate, StringFormat='Due date: {0:dd.MM.yyyy}'}"
-                                        FontSize="13"
-                                        TextColor="Gray" />
-
+                                   
                                     <Button
                                         Text="Edit"
                                         BackgroundColor="#2563EB"

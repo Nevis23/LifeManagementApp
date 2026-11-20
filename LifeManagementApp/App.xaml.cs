@@ -1,20 +1,17 @@
-﻿
-namespace LifeManagementApp;
+﻿namespace LifeManagementApp;
 
 public partial class App : Application
 {
-    private readonly TodoPage _todoPage;
+    private readonly HomePage _homePage;
 
-    public App(TodoPage todoPage)
+    public App(HomePage homePage)
     {
         InitializeComponent();
-
-        _todoPage = todoPage;
+        _homePage = homePage;
     }
 
-    protected override Window CreateWindow(
-        IActivationState? activationState)
+    protected override Window CreateWindow(IActivationState? activationState)
     {
-        return new Window(_todoPage);
+        return new Window(new NavigationPage(_homePage));
     }
 }
