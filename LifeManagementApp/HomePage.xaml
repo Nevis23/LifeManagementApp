@@ -56,6 +56,11 @@
                                         TextColor="Black" />
 
                                     <Label
+                                        Text="{Binding Description}"
+                                        FontSize="14"
+                                        TextColor="Gray" />
+
+                                    <Label
                                         Text="{Binding Priority}"
                                         TextColor="{Binding PriorityColor}" />
 
