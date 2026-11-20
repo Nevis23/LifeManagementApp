@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FiQzuxOP44w=",
+  "dgSpecHash": "5wg4wxsws/4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Joni\\Desktop\\projekti\\LifeManagementApp\\LifeManagementApp\\LifeManagementApp.csproj",
+  "projectFilePath": "C:\\Users\\Joni\\Desktop\\projekti\\mita\\LifeManagementApp\\LifeManagementApp\\LifeManagementApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Joni\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.2\\communitytoolkit.mvvm.8.4.2.nupkg.sha512",
     "C:\\Users\\Joni\\.nuget\\packages\\googlegson\\2.13.1.1\\googlegson.2.13.1.1.nupkg.sha512",

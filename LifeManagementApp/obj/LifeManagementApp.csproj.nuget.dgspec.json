@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Joni\\Desktop\\projekti\\LifeManagementApp\\LifeManagementApp\\LifeManagementApp.csproj": {}
+    "C:\\Users\\Joni\\Desktop\\projekti\\mita\\LifeManagementApp\\LifeManagementApp\\LifeManagementApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Joni\\Desktop\\projekti\\LifeManagementApp\\LifeManagementApp\\LifeManagementApp.csproj": {
+    "C:\\Users\\Joni\\Desktop\\projekti\\mita\\LifeManagementApp\\LifeManagementApp\\LifeManagementApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Joni\\Desktop\\projekti\\LifeManagementApp\\LifeManagementApp\\LifeManagementApp.csproj",
+        "projectUniqueName": "C:\\Users\\Joni\\Desktop\\projekti\\mita\\LifeManagementApp\\LifeManagementApp\\LifeManagementApp.csproj",
         "projectName": "LifeManagementApp",
-        "projectPath": "C:\\Users\\Joni\\Desktop\\projekti\\LifeManagementApp\\LifeManagementApp\\LifeManagementApp.csproj",
+        "projectPath": "C:\\Users\\Joni\\Desktop\\projekti\\mita\\LifeManagementApp\\LifeManagementApp\\LifeManagementApp.csproj",
         "packagesPath": "C:\\Users\\Joni\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Joni\\Desktop\\projekti\\LifeManagementApp\\LifeManagementApp\\obj\\",
+        "outputPath": "C:\\Users\\Joni\\Desktop\\projekti\\mita\\LifeManagementApp\\LifeManagementApp\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

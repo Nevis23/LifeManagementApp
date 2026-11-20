@@ -24,7 +24,7 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property.EntryPointFilePath = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LifeManagementApp
-build_property.ProjectDir = C:\Users\Joni\Desktop\projekti\LifeManagementApp\LifeManagementApp\
+build_property.ProjectDir = C:\Users\Joni\Desktop\projekti\mita\LifeManagementApp\LifeManagementApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTAotExportsEnabled = 
@@ -36,7 +36,7 @@ build_property.CsWinRTUseWindowsUIXamlProjections = false
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Joni/Desktop/projekti/LifeManagementApp/LifeManagementApp/App.xaml]
+[C:/Users/Joni/Desktop/projekti/mita/LifeManagementApp/LifeManagementApp/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LifeManagementApp.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
@@ -46,7 +46,7 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
-[C:/Users/Joni/Desktop/projekti/LifeManagementApp/LifeManagementApp/AppShell.xaml]
+[C:/Users/Joni/Desktop/projekti/mita/LifeManagementApp/LifeManagementApp/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LifeManagementApp.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
@@ -56,7 +56,7 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
-[C:/Users/Joni/Desktop/projekti/LifeManagementApp/LifeManagementApp/HomePage.xaml]
+[C:/Users/Joni/Desktop/projekti/mita/LifeManagementApp/LifeManagementApp/HomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LifeManagementApp.HomePage.xaml
 build_metadata.AdditionalFiles.TargetPath = HomePage.xaml
@@ -66,7 +66,7 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
-[C:/Users/Joni/Desktop/projekti/LifeManagementApp/LifeManagementApp/MainPage.xaml]
+[C:/Users/Joni/Desktop/projekti/mita/LifeManagementApp/LifeManagementApp/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LifeManagementApp.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
@@ -76,7 +76,7 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
-[C:/Users/Joni/Desktop/projekti/LifeManagementApp/LifeManagementApp/Resources/Styles/Colors.xaml]
+[C:/Users/Joni/Desktop/projekti/mita/LifeManagementApp/LifeManagementApp/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LifeManagementApp.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
@@ -86,7 +86,7 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
-[C:/Users/Joni/Desktop/projekti/LifeManagementApp/LifeManagementApp/Resources/Styles/Styles.xaml]
+[C:/Users/Joni/Desktop/projekti/mita/LifeManagementApp/LifeManagementApp/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LifeManagementApp.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
@@ -96,7 +96,7 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
-[C:/Users/Joni/Desktop/projekti/LifeManagementApp/LifeManagementApp/TodoPage.xaml]
+[C:/Users/Joni/Desktop/projekti/mita/LifeManagementApp/LifeManagementApp/TodoPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LifeManagementApp.TodoPage.xaml
 build_metadata.AdditionalFiles.TargetPath = TodoPage.xaml
