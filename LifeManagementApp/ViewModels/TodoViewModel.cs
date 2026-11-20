@@ -18,6 +18,9 @@ namespace LifeManagementApp.ViewModels
         [ObservableProperty]
         private string newTodoTitle = string.Empty;
 
+        [ObservableProperty]
+        private string newTodoDescription = string.Empty;
+
         public TodoViewModel(TodoService todoService)
         {
             _todoService = todoService;
@@ -46,7 +49,7 @@ namespace LifeManagementApp.ViewModels
             Todo newTodo = new Todo
             {
                 Title = NewTodoTitle,
-                Description = "",
+                Description = NewTodoDescription,
                 Priority = SelectedPriority switch
                 {
                     "High" => 1,
@@ -64,6 +67,7 @@ namespace LifeManagementApp.ViewModels
             Todos.Add(newTodo);
 
             NewTodoTitle = string.Empty;
+            NewTodoDescription = string.Empty;
         }
 
         [RelayCommand]
@@ -127,6 +131,9 @@ namespace LifeManagementApp.ViewModels
         private string editTodoTitle = string.Empty;
 
         [ObservableProperty]
+        private string editTodoDescription = string.Empty;
+
+        [ObservableProperty]
         private DateTime editTodoDueDate = DateTime.Today;
 
         [ObservableProperty]
@@ -141,6 +148,7 @@ namespace LifeManagementApp.ViewModels
             SelectedTodo = todo;
 
             EditTodoTitle = todo.Title;
+            EditTodoDescription = todo.Description;
             EditTodoDueDate = todo.DueDate;
 
             EditTodoPriorityText = todo.Priority switch
@@ -167,7 +175,7 @@ namespace LifeManagementApp.ViewModels
             {
                 Id = SelectedTodo.Id,
                 Title = EditTodoTitle,
-                Description = SelectedTodo.Description,
+                Description = EditTodoDescription,
                 Priority = EditTodoPriorityText switch
                 {
                     "High" => 1,
@@ -190,6 +198,9 @@ namespace LifeManagementApp.ViewModels
 
             SelectedTodo = null;
             IsEditing = false;
+
+            EditTodoTitle = string.Empty;
+            EditTodoDescription = string.Empty;
         }
 
         [RelayCommand]

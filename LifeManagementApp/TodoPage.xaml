@@ -77,7 +77,9 @@
                                             FontSize="18"
                                             FontAttributes="Bold"
                                             TextColor="Black"
-                                            VerticalOptions="Center" /> 
+                                            VerticalOptions="Center" />
+
+                                        
                                     </Grid>
 
                                     <Label
@@ -138,6 +140,12 @@
                     Placeholder="Task title"
                     Text="{Binding EditTodoTitle}" />
 
+                <Editor
+                    Placeholder="Edit description"
+                    Text="{Binding EditTodoDescription}"
+                    AutoSize="TextChanges"
+                    HeightRequest="100" />
+
                 <Label Text="Priority" TextColor="Black" />
 
                 <Picker
@@ -173,6 +181,12 @@
             <Entry
                 Placeholder="Enter task title..."
                 Text="{Binding NewTodoTitle}" />
+
+            <Editor
+                Placeholder="Enter task description"
+                Text="{Binding NewTodoDescription}"
+                AutoSize="TextChanges"
+                HeightRequest="100" />
 
             <Label
                 Text="Priority"
