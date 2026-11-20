@@ -39,16 +39,43 @@ namespace LifeManagementApp.ViewModels
         private string windSpeed = "Loading...";
 
         [ObservableProperty]
+        private string weatherDescription = "Loading...";
+
+        [ObservableProperty]
         private bool isKitesurfingWeather;
 
         public async Task LoadWeatherAsync()
         {
-            var weather = await _weatherService.GetWeatherAsync();
+            try
+            {
+                var weather = await _weatherService.GetWeatherAsync();
 
-            Temperature = $"{weather.Temperature} °C";
-            WindSpeed = $"{weather.WindSpeed} m/s";
+                Temperature = $"{weather.Temperature} °C";
+                WindSpeed = $"{weather.WindSpeed} m/s";
 
-            IsKitesurfingWeather = weather.WindSpeed > 5;
+                IsKitesurfingWeather = weather.WindSpeed > 5;
+
+                WeatherDescription = weather.WeatherCode switch
+                {
+                    0 => "Selkeää",
+                    1 => "Enimmäkseen selkeää",
+                    2 => "Puolipilvistä",
+                    3 => "Pilvistä",
+                    45 or 48 => "Sumua",
+                    51 or 53 or 55 => "Tihkusadetta",
+                    61 or 63 or 65 => "Vesisadetta",
+                    71 or 73 or 75 => "Lumisadetta",
+                    80 or 81 or 82 => "Sadekuuroja",
+                    95 => "Ukkosta",
+                    _ => "Tuntematon säätila"
+                };
+            }
+            catch (Exception)
+            {
+                Temperature = "Weather unavailable";
+                WindSpeed = "";
+                IsKitesurfingWeather = false;
+            }
         }
     }
 }

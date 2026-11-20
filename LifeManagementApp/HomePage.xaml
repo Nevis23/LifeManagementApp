@@ -91,6 +91,12 @@
                         TextColor="Black" />
 
                     <Label
+                        Text="{Binding WeatherDescription}"
+                        FontSize="18"
+                        FontAttributes="Bold"
+                        TextColor="Black" />
+
+                    <Label
                         Text="{Binding WindSpeed}"
                         FontSize="16"
                         TextColor="Black" />

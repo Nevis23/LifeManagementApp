@@ -13,6 +13,9 @@
         <member name="P:LifeManagementApp.ViewModels.HomeViewModel.WindSpeed">
             <inheritdoc cref="F:LifeManagementApp.ViewModels.HomeViewModel.windSpeed"/>
         </member>
+        <member name="P:LifeManagementApp.ViewModels.HomeViewModel.WeatherDescription">
+            <inheritdoc cref="F:LifeManagementApp.ViewModels.HomeViewModel.weatherDescription"/>
+        </member>
         <member name="P:LifeManagementApp.ViewModels.HomeViewModel.IsKitesurfingWeather">
             <inheritdoc cref="F:LifeManagementApp.ViewModels.HomeViewModel.isKitesurfingWeather"/>
         </member>
@@ -117,6 +120,9 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.WindSpeed">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "WindSpeed" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.WeatherDescription">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "WeatherDescription" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsKitesurfingWeather">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsKitesurfingWeather" generated properties.</summary>
         </member>
@@ -155,6 +161,9 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.WindSpeed">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "WindSpeed" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.WeatherDescription">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "WeatherDescription" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsKitesurfingWeather">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsKitesurfingWeather" generated properties.</summary>

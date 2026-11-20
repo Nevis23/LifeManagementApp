@@ -1,4 +1,4 @@
-<api type="debug" assembly-name="LifeManagementApp" mvid="15214f0649ba4a64bf1d88ba7b7c2e45">
+<api type="debug" assembly-name="LifeManagementApp" mvid="4671c30c77c64a3a981e99a10fd30b62">
   <java-to-managed>
     <entry java-name="crc6457e3f3689f192082/MainActivity" managed-name="LifeManagementApp.MainActivity, LifeManagementApp" managed-type-token-id="33554444" />
     <entry java-name="crc6457e3f3689f192082/MainApplication" managed-name="LifeManagementApp.MainApplication, LifeManagementApp" managed-type-token-id="33554445" />
