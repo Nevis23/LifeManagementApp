@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LifeManagementApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+1e5be062eba831f7f04cbe3a38d58f302658b810")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+ad3b845e8ae04b8360215180efb2b7a0c84e29ff")]
 [assembly: System.Reflection.AssemblyProductAttribute("LifeManagementApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LifeManagementApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
