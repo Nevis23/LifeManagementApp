@@ -1,31 +1,38 @@
 ﻿
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Java.Util;
 using LifeManagementApp.Models;
 using LifeManagementApp.Services;
 using System.Collections.ObjectModel;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace LifeManagementApp.ViewModels
 {
    
     public partial class TodoViewModel : ObservableObject
     {
+        // communicate with the database
         private readonly TodoService _todoService;
 
-        public ObservableCollection<Todo> Todos { get; set; }
-            = new ObservableCollection<Todo>();
+        // list of todos that updates the ui
+        public ObservableCollection<Todo> Todos { get; set; } = new ObservableCollection<Todo>();
 
+        // new todo title
         [ObservableProperty]
         private string newTodoTitle = string.Empty;
 
+        // desription of todo
         [ObservableProperty]
         private string newTodoDescription = string.Empty;
 
+        // constructor that receives todoservice
         public TodoViewModel(TodoService todoService)
         {
             _todoService = todoService;
         }
 
+        // loads todo from database
         public async Task LoadTodosAsync()
         {
             await _todoService.InitializeAsync();

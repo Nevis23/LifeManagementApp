@@ -8,12 +8,15 @@ namespace LifeManagementApp.ViewModels
 {
     public partial class HomeViewModel : ObservableObject
     {
+        // get todo and weather data
         private readonly WeatherService _weatherService;
         private readonly TodoService _todoService;
 
+        //three most important todos
         public ObservableCollection<Todo> ImportantTodos { get; set; }
             = new ObservableCollection<Todo>();
 
+        // receives the services
         public HomeViewModel(TodoService todoService, WeatherService weatherService)
         {
             _todoService = todoService;
@@ -22,10 +25,12 @@ namespace LifeManagementApp.ViewModels
 
         public async Task LoadImportantTodosAsync()
         {
+            // get tree unfinished todos
             var todos = await _todoService.GetTopThreeTodosAsync();
 
             ImportantTodos.Clear();
 
+            // Add todos to list
             foreach (var todo in todos)
             {
                 ImportantTodos.Add(todo);
@@ -51,8 +56,10 @@ namespace LifeManagementApp.ViewModels
         {
             try
             {
+                // Current weather data
                 var weather = await _weatherService.GetWeatherAsync();
 
+                // updates data
                 Temperature = $"{weather.Temperature} °C";
                 WindSpeed = $"{weather.WindSpeed} m/s";
 

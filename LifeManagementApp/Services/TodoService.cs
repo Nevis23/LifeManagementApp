@@ -7,7 +7,7 @@ namespace LifeManagementApp.Services
 {
     public class TodoService
     {
-        // riippuvuuksien injektointi
+        // Dependency injection for database context
         private readonly IDbContextFactory<AppDbContext> _contextFactory;
 
         public TodoService(IDbContextFactory<AppDbContext> contextFactory)
@@ -19,7 +19,7 @@ namespace LifeManagementApp.Services
         {
             await using var context =
                 await _contextFactory.CreateDbContextAsync();
-            //tarkistaa, onko tietokanta olemassa.
+            // Checks if the database exists
             await context.Database.EnsureCreatedAsync();
         }
 
@@ -27,8 +27,8 @@ namespace LifeManagementApp.Services
         {
             await using var context =
                 await _contextFactory.CreateDbContextAsync();
-                // hakee kaikki tehtävät tietokannasta
-                return await context.Todos
+            // Gets all todos from the database and sorts them by priority
+            return await context.Todos
                 .OrderBy(t => t.Priority)
                 .ToListAsync();
         }
@@ -38,8 +38,10 @@ namespace LifeManagementApp.Services
             await using var context =
                 await _contextFactory.CreateDbContextAsync();
 
+            // Adds a new todo
             context.Todos.Add(todo);
 
+            // Saves changes
             await context.SaveChangesAsync();
         }
 
@@ -48,8 +50,10 @@ namespace LifeManagementApp.Services
             await using var context =
                 await _contextFactory.CreateDbContextAsync();
 
+            // Removes the selected todo
             context.Todos.Remove(todo);
 
+            // Saves changes 
             await context.SaveChangesAsync();
         }
 
@@ -58,8 +62,10 @@ namespace LifeManagementApp.Services
             await using var context =
                 await _contextFactory.CreateDbContextAsync();
 
+            // Updates the selected todo
             context.Todos.Update(todo);
 
+            // Saves changes
             await context.SaveChangesAsync();
         }
 
@@ -68,6 +74,7 @@ namespace LifeManagementApp.Services
                 await using var context =
                     await _contextFactory.CreateDbContextAsync();
 
+                // Sorts todos
                 return await context.Todos
                     .OrderBy(todo => todo.Priority)
                     .ThenBy(todo => todo.DueDate)
@@ -79,6 +86,7 @@ namespace LifeManagementApp.Services
                 await using var context =
                     await _contextFactory.CreateDbContextAsync();
 
+                // Sorts todos
                 return await context.Todos
                     .OrderBy(todo => todo.DueDate)
                     .ThenBy(todo => todo.Priority)
@@ -90,6 +98,7 @@ namespace LifeManagementApp.Services
             await using var context =
                 await _contextFactory.CreateDbContextAsync();
 
+            // Sorts todos Takes only the first three todos
             return await context.Todos
                 .Where(todo => !todo.IsCompleted)
                 .OrderBy(todo => todo.Priority)

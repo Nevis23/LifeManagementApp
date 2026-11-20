@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Joni\\Desktop\\projekti\\LifeManagementApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F20E0708-B80B-33C3-EC04-45D4AA338926}|LifeManagementApp\\LifeManagementApp.csproj|c:\\users\\joni\\desktop\\projekti\\lifemanagementapp\\lifemanagementapp\\viewmodels\\todoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F20E0708-B80B-33C3-EC04-45D4AA338926}|LifeManagementApp\\LifeManagementApp.csproj|solutionrelative:lifemanagementapp\\viewmodels\\todoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F20E0708-B80B-33C3-EC04-45D4AA338926}|LifeManagementApp\\LifeManagementApp.csproj|c:\\users\\joni\\desktop\\projekti\\lifemanagementapp\\lifemanagementapp\\todopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F20E0708-B80B-33C3-EC04-45D4AA338926}|LifeManagementApp\\LifeManagementApp.csproj|solutionrelative:lifemanagementapp\\todopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F20E0708-B80B-33C3-EC04-45D4AA338926}|LifeManagementApp\\LifeManagementApp.csproj|c:\\users\\joni\\desktop\\projekti\\lifemanagementapp\\lifemanagementapp\\todopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{F20E0708-B80B-33C3-EC04-45D4AA338926}|LifeManagementApp\\LifeManagementApp.csproj|solutionrelative:lifemanagementapp\\todopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F20E0708-B80B-33C3-EC04-45D4AA338926}|LifeManagementApp\\LifeManagementApp.csproj|c:\\users\\joni\\desktop\\projekti\\lifemanagementapp\\lifemanagementapp\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F20E0708-B80B-33C3-EC04-45D4AA338926}|LifeManagementApp\\LifeManagementApp.csproj|solutionrelative:lifemanagementapp\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F20E0708-B80B-33C3-EC04-45D4AA338926}|LifeManagementApp\\LifeManagementApp.csproj|c:\\users\\joni\\desktop\\projekti\\lifemanagementapp\\lifemanagementapp\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F20E0708-B80B-33C3-EC04-45D4AA338926}|LifeManagementApp\\LifeManagementApp.csproj|solutionrelative:lifemanagementapp\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F20E0708-B80B-33C3-EC04-45D4AA338926}|LifeManagementApp\\LifeManagementApp.csproj|c:\\users\\joni\\desktop\\projekti\\lifemanagementapp\\lifemanagementapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F20E0708-B80B-33C3-EC04-45D4AA338926}|LifeManagementApp\\LifeManagementApp.csproj|solutionrelative:lifemanagementapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F20E0708-B80B-33C3-EC04-45D4AA338926}|LifeManagementApp\\LifeManagementApp.csproj|c:\\users\\joni\\desktop\\projekti\\lifemanagementapp\\lifemanagementapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F20E0708-B80B-33C3-EC04-45D4AA338926}|LifeManagementApp\\LifeManagementApp.csproj|solutionrelative:lifemanagementapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F20E0708-B80B-33C3-EC04-45D4AA338926}|LifeManagementApp\\LifeManagementApp.csproj|c:\\users\\joni\\desktop\\projekti\\lifemanagementapp\\lifemanagementapp\\viewmodels\\todoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F20E0708-B80B-33C3-EC04-45D4AA338926}|LifeManagementApp\\LifeManagementApp.csproj|solutionrelative:lifemanagementapp\\viewmodels\\todoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,15 +38,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TodoPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Joni\\Desktop\\projekti\\LifeManagementApp\\LifeManagementApp\\TodoPage.xaml.cs",
+              "RelativeDocumentMoniker": "LifeManagementApp\\TodoPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Joni\\Desktop\\projekti\\LifeManagementApp\\LifeManagementApp\\TodoPage.xaml.cs",
+              "RelativeToolTip": "LifeManagementApp\\TodoPage.xaml.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwCkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-20T21:28:59.409Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -36,23 +61,83 @@
               "RelativeDocumentMoniker": "LifeManagementApp\\TodoPage.xaml",
               "ToolTip": "C:\\Users\\Joni\\Desktop\\projekti\\LifeManagementApp\\LifeManagementApp\\TodoPage.xaml",
               "RelativeToolTip": "LifeManagementApp\\TodoPage.xaml",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAkwJMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-11-20T20:16:49.131Z",
+              "WhenOpened": "2026-11-20T21:28:53.664Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "HomePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Joni\\Desktop\\projekti\\LifeManagementApp\\LifeManagementApp\\HomePage.xaml.cs",
+              "RelativeDocumentMoniker": "LifeManagementApp\\HomePage.xaml.cs",
+              "ToolTip": "C:\\Users\\Joni\\Desktop\\projekti\\LifeManagementApp\\LifeManagementApp\\HomePage.xaml.cs",
+              "RelativeToolTip": "LifeManagementApp\\HomePage.xaml.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAwwBQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-20T21:26:10.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomePage.xaml",
+              "DocumentMoniker": "C:\\Users\\Joni\\Desktop\\projekti\\LifeManagementApp\\LifeManagementApp\\HomePage.xaml",
+              "RelativeDocumentMoniker": "LifeManagementApp\\HomePage.xaml",
+              "ToolTip": "C:\\Users\\Joni\\Desktop\\projekti\\LifeManagementApp\\LifeManagementApp\\HomePage.xaml",
+              "RelativeToolTip": "LifeManagementApp\\HomePage.xaml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-11-20T21:26:06.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Joni\\Desktop\\projekti\\LifeManagementApp\\LifeManagementApp\\App.xaml.cs",
+              "RelativeDocumentMoniker": "LifeManagementApp\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\Joni\\Desktop\\projekti\\LifeManagementApp\\LifeManagementApp\\App.xaml.cs",
+              "RelativeToolTip": "LifeManagementApp\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-20T21:24:03.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Joni\\Desktop\\projekti\\LifeManagementApp\\LifeManagementApp\\App.xaml",
+              "RelativeDocumentMoniker": "LifeManagementApp\\App.xaml",
+              "ToolTip": "C:\\Users\\Joni\\Desktop\\projekti\\LifeManagementApp\\LifeManagementApp\\App.xaml",
+              "RelativeToolTip": "LifeManagementApp\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-11-20T21:24:01.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "TodoViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Joni\\Desktop\\projekti\\LifeManagementApp\\LifeManagementApp\\ViewModels\\TodoViewModel.cs",
               "RelativeDocumentMoniker": "LifeManagementApp\\ViewModels\\TodoViewModel.cs",
               "ToolTip": "C:\\Users\\Joni\\Desktop\\projekti\\LifeManagementApp\\LifeManagementApp\\ViewModels\\TodoViewModel.cs",
               "RelativeToolTip": "LifeManagementApp\\ViewModels\\TodoViewModel.cs",
-              "ViewState": "AgIAAK0AAAAAAAAAAAAuwMoAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAMEAAAAAAAAAAAAcwNMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-20T20:14:14.197Z",
+              "WhenOpened": "2026-11-20T21:17:25.058Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             }
           ]
         }

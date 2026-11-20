@@ -4,9 +4,11 @@ namespace LifeManagementApp;
 
 public partial class HomePage : ContentPage
 {
+    // stores page for navigation
     private readonly TodoPage _todoPage;
     private readonly HomeViewModel _viewModel;
 
+    // receives the page and ViewModel
     public HomePage(
         TodoPage todoPage,
         HomeViewModel viewModel)
@@ -16,6 +18,7 @@ public partial class HomePage : ContentPage
         _todoPage = todoPage;
         _viewModel = viewModel;
 
+        // connects viewmodel
         BindingContext = _viewModel;
     }
 

@@ -6,14 +6,17 @@ namespace LifeManagementApp;
 
 public partial class TodoPage : ContentPage
 {
+    // store todoviewmodel
     private readonly TodoViewModel _viewModel;
 
+    // receives the ViewModel
     public TodoPage(TodoViewModel viewModel)
     {
         InitializeComponent();
 
         _viewModel = viewModel;
 
+        // connects to user interface
         BindingContext = _viewModel;
     }
 
@@ -21,6 +24,7 @@ public partial class TodoPage : ContentPage
     {
         base.OnAppearing();
 
+        // loads all todos
         await _viewModel.LoadTodosAsync();
     }
 
@@ -35,6 +39,7 @@ public partial class TodoPage : ContentPage
         }
     }
 
+    // returns to the dashboard
     private async void OnBackToDashboardClicked(
         object sender,
         EventArgs e)
