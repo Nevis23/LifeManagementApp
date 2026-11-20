@@ -117,14 +117,9 @@
                         TextColor="Black" />
 
                     <Label
-                        Text="Good wind conditions for kitesurfing!"
-                        TextColor="Green"
-                        FontAttributes="Bold"
-                        IsVisible="{Binding IsKitesurfingWeather}" />
-
-                    <Label
-                        Text="Wind conditions will appear here."
-                        TextColor="Gray" />
+                        Text="{Binding KitesurfingMessage}"
+                        FontSize="18"
+                        TextColor="Black" />
                 </VerticalStackLayout>
             </Frame>
 

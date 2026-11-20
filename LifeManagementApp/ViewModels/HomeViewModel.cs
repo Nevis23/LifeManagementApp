@@ -44,6 +44,9 @@ namespace LifeManagementApp.ViewModels
         [ObservableProperty]
         private bool isKitesurfingWeather;
 
+        [ObservableProperty]
+        private string kitesurfingMessage = string.Empty;
+
         public async Task LoadWeatherAsync()
         {
             try
@@ -55,19 +58,23 @@ namespace LifeManagementApp.ViewModels
 
                 IsKitesurfingWeather = weather.WindSpeed > 5;
 
+                KitesurfingMessage = IsKitesurfingWeather
+                    ? $"Hyvät olosuhteet leijalautailuun! Tuuli {weather.WindSpeed:F1} m/s."
+                    : $"Huonot olosuhteet leijalautailuun! Tuuli {weather.WindSpeed:F1} m/s.";
+
                 WeatherDescription = weather.WeatherCode switch
                 {
-                    0 => "Selkeää",
-                    1 => "Enimmäkseen selkeää",
-                    2 => "Puolipilvistä",
-                    3 => "Pilvistä",
-                    45 or 48 => "Sumua",
-                    51 or 53 or 55 => "Tihkusadetta",
-                    61 or 63 or 65 => "Vesisadetta",
-                    71 or 73 or 75 => "Lumisadetta",
-                    80 or 81 or 82 => "Sadekuuroja",
-                    95 => "Ukkosta",
-                    _ => "Tuntematon säätila"
+                    0 => "☀️ Selkeää",
+                    1 => "🌤️ Enimmäkseen selkeää",
+                    2 => "⛅ Puolipilvistä",
+                    3 => "☁️ Pilvistä",
+                    45 or 48 => "🌫️ Sumua",
+                    51 or 53 or 55 => "🌦️ Tihkusadetta",
+                    61 or 63 or 65 => "🌧️ Vesisadetta",
+                    71 or 73 or 75 => "❄️ Lumisadetta",
+                    80 or 81 or 82 => "🌦️ Sadekuuroja",
+                    95 => "⛈️ Ukkosta",
+                    _ => "❔ Tuntematon säätila"
                 };
             }
             catch (Exception)

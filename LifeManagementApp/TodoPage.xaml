@@ -8,6 +8,13 @@
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="15">
 
+            <Button
+                Text="← Back to Dashboard"
+                Clicked="OnBackToDashboardClicked"
+                HorizontalOptions="Start"
+                BackgroundColor="Transparent"
+                TextColor="Blue" />
+
             <Label
                 Text="My Todos"
                 FontSize="30"

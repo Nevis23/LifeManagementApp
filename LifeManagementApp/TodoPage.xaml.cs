@@ -34,4 +34,11 @@ public partial class TodoPage : ContentPage
             await _viewModel.ToggleTodoCompletedCommand.ExecuteAsync(todo);
         }
     }
+
+    private async void OnBackToDashboardClicked(
+        object sender,
+        EventArgs e)
+        {
+            await Navigation.PopAsync();
+    }
 }
